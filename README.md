@@ -4,4 +4,6 @@
 
 upload files with HTML5 technology
 
-for github!
+for GitHub!
+
+ONLY!

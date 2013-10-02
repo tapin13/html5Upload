@@ -1,8 +1,6 @@
  html5Upload
 =============
 
-upload files with HTML5 technology
+Upload files with HTML5 technology (FileReader).
 
-for GitHub!
-
-ONLY!
+Work code example: http://html5upload.rikuz.com/

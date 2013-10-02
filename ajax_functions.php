@@ -5,9 +5,9 @@ $function();
 
 function uploadFile() {
     $data = $_POST['data'];
-    $document_id = md5(rand(10) . 'tapin13' . rand(100));
-    $filetype = isset($_POST['filetype']) ? mysql_real_escape_string($_POST['filetype']) : '';
-    $filename = isset($_POST['filename']) ? mysql_real_escape_string($_POST['filename']) : '';
+    $document_id = md5(rand(10, 1013) . 'tapin13' . rand(100, 10013));
+    $filetype = isset($_POST['filetype']) ? htmlspecialchars($_POST['filetype']) : '';
+    $filename = isset($_POST['filename']) ? htmlspecialchars($_POST['filename']) : '';
 
     $base64_shift = strrpos($data, 'base64') + 7;
     $data = substr($data, $base64_shift, strlen($data));

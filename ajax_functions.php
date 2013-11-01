@@ -1,7 +1,13 @@
 <?
 $function = isset($_POST['function']) ? $_POST['function'] : '';
 
-$function();
+$allow_access_fucntions = array('uploadFile');
+
+if(in_array($function, $allow_access_fucntions)) {
+    $function();
+} else {
+    echo "access denied!";
+}
 
 function uploadFile() {
     $data = $_POST['data'];
